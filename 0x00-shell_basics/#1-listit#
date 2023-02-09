@@ -1,0 +1,7 @@
+chmod u+x 1-listit
+ls -a
+wc -l 1-listit
+./1-listit
+git add .
+git commit -m '1-listit'
+git push
