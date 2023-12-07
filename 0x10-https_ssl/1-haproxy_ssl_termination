@@ -35,13 +35,13 @@ defaults
 
 
 
-# start of parameters for nwabueze.tech
+# start of parameters for acaciatree.tech
 frontend acaciatree.tech-http-frontend
         bind     *:80
         redirect scheme https code 301 if !{ ssl_fc }
         http-request set-header X-Forwarded-Proto http
         default_backend  acaciatree.tech-backend
-frontend b3zaleel-alx.tech-https-frontend
+frontend acaciatree.tech-https-frontend
         bind *:443 ssl crt /etc/letsencrypt/live/www.acaciatree.tech/fullchain.pem
         http-request set-header X-Forwarded-Proto https
         default_backend acaciatree.tech-backend
